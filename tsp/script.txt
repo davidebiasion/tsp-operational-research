@@ -1,0 +1,22 @@
+# definizione dei titoli per il grafico
+set title "TSP GRAPH"
+set xlabel "x"
+set ylabel "y" 
+# Set linestyle 1 to blue (#0060ad)
+set style line 1 \
+    linecolor rgb '#0060ad' \
+    linetype 1 linewidth 2 \
+    pointtype 7 pointsize 1.5
+# grafica
+plot 'plot.dat' with linespoints linestyle 1
+#, '' with labels center offset .8,.8 notitle
+
+# with linespoints linestyle 1
+
+# file.dat = nome del file. usare il simbolo # per le linee di commento
+# 
+# u 1:2    = colonne da usare
+# 
+# t 'dat'  = etichetta dei dati
+#
+# w p 3    = definisce lo stile del plot: punti di tipo 3
